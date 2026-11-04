@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HTTP em texto puro bloqueado para toda a aplicacao (APIs so via HTTPS).
+     Conexoes Stratum usam sockets TCP/TLS proprios e sao controladas pelo usuario. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

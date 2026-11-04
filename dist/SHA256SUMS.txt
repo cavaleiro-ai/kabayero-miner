@@ -1,0 +1,2 @@
+60e3162d24dfbffae98017958c4dde27176a0c0c8122c615cd7f1e15837f458c *KabayeroMiner-1.0.0-release.apk
+aaa18ef5de7961159945c8fc67fd90010389871bbddd022c7712932ca95c0398 *KabayeroMiner-1.0.0-debug.apk

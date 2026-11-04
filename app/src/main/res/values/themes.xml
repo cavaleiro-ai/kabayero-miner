@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Cavaleiros" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/matrix_black</item>
+        <item name="android:statusBarColor">@color/matrix_black</item>
+        <item name="android:navigationBarColor">@color/matrix_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/matrix_green</item>
+        <item name="colorPrimaryDark">@color/matrix_black</item>
+        <item name="colorAccent">@color/matrix_green</item>
+        <item name="android:textColorPrimary">@color/matrix_green</item>
+        <item name="android:colorBackground">@color/matrix_black</item>
+    </style>
+</resources>

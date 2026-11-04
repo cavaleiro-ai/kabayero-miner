@@ -1,0 +1,28 @@
+# Gradle / Android
+.gradle/
+build/
+app/build/
+local.properties
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Chaves e segredos - NUNCA versionar
+*.jks
+*.keystore
+keystore.properties
+
+# RAG local (indice gerado)
+tools/rag/index.json

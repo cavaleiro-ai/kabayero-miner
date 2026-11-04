@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="matrix_black">#FF000000</color>
+    <color name="matrix_green">#FF00FF41</color>
+    <color name="matrix_green_dark">#FF008F11</color>
+    <color name="matrix_green_dim">#FF003B00</color>
+</resources>

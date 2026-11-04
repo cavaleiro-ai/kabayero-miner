@@ -1,0 +1,43 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Permissao do gradlew
+        run: chmod +x gradlew
+
+      - name: Testes unitarios (BIP39/BIP32/BIP84, SHA-256d, Stratum)
+        run: ./gradlew testDebugUnitTest --no-daemon
+
+      - name: APK debug (instalavel)
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: APK release (nao assinado; assine com sua chave)
+        run: ./gradlew assembleRelease --no-daemon
+
+      - name: Publicar artefatos
+        uses: actions/upload-artifact@v4
+        with:
+          name: kabayero-miner-apk
+          path: |
+            app/build/outputs/apk/debug/*.apk
+            app/build/outputs/apk/release/*.apk
+            app/build/reports/tests/testDebugUnitTest/

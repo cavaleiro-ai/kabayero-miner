@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo do Kabayero Miner: escudo de cavaleiro com bisel, trilhas de circuito, rebites e simbolo do bitcoin. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- brilho externo -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#3300FF41"
+        android:strokeWidth="7"
+        android:strokeLineJoin="round"
+        android:pathData="M54,12 C66,18 78,20 92,20 V54 C92,73 75,88 54,98 C33,88 16,73 16,54 V20 C30,20 42,18 54,12 Z" />
+
+    <!-- corpo do escudo -->
+    <path
+        android:fillColor="#07200A"
+        android:strokeColor="#00FF41"
+        android:strokeWidth="2.5"
+        android:strokeLineJoin="round"
+        android:pathData="M54,12 C66,18 78,20 92,20 V54 C92,73 75,88 54,98 C33,88 16,73 16,54 V20 C30,20 42,18 54,12 Z" />
+
+    <!-- metade esquerda mais clara (volume) -->
+    <path
+        android:fillColor="#0C2E10"
+        android:pathData="M54,21 C45,25 35,27 24,27 V54 C24,68 37,81 54,89 Z" />
+
+    <!-- faixa interna (bisel) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#008F11"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:pathData="M54,21 C63,25 73,27 84,27 V54 C84,68 71,81 54,89 C37,81 24,68 24,54 V27 C35,27 45,25 54,21 Z" />
+
+    <!-- reflexo na borda superior esquerda -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8CFFB0"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M21,25 C32,25 43,22 51,17" />
+
+    <!-- trilhas de circuito -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00B32D"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M30,48 H41 M30,56 H39 M30,64 H37 M78,48 H67 M78,56 H69 M78,64 H71 M41,48 V44 M67,48 V44 M37,64 V68 M71,64 V68" />
+    <path
+        android:fillColor="#00FF41"
+        android:pathData="M30,48 m-1.6,0 a1.6,1.6 0 1,0 3.2,0 a1.6,1.6 0 1,0 -3.2,0 M30,56 m-1.6,0 a1.6,1.6 0 1,0 3.2,0 a1.6,1.6 0 1,0 -3.2,0 M30,64 m-1.6,0 a1.6,1.6 0 1,0 3.2,0 a1.6,1.6 0 1,0 -3.2,0 M78,48 m-1.6,0 a1.6,1.6 0 1,0 3.2,0 a1.6,1.6 0 1,0 -3.2,0 M78,56 m-1.6,0 a1.6,1.6 0 1,0 3.2,0 a1.6,1.6 0 1,0 -3.2,0 M78,64 m-1.6,0 a1.6,1.6 0 1,0 3.2,0 a1.6,1.6 0 1,0 -3.2,0" />
+
+    <!-- rebites na borda -->
+    <path
+        android:fillColor="#00FF41"
+        android:pathData="M54,16.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M20,23.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M88,23.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M20,54 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M88,54 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M35,84.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M73,84.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 M54,93.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+
+    <!-- simbolo do bitcoin: brilho -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#3300FF41"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44.5,42 V70 M44.5,42 H55.5 C59.5,42 62.5,45 62.5,49 C62.5,53 59.5,56 55.5,56 H44.5 M44.5,56 H56.5 C60.5,56 63.5,59 63.5,63 C63.5,67 60.5,70 56.5,70 H44.5 M48.5,37.5 V42 M53.5,37.5 V42 M48.5,70 V74.5 M53.5,70 V74.5" />
+    <!-- simbolo do bitcoin -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00FF41"
+        android:strokeWidth="3.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44.5,42 V70 M44.5,42 H55.5 C59.5,42 62.5,45 62.5,49 C62.5,53 59.5,56 55.5,56 H44.5 M44.5,56 H56.5 C60.5,56 63.5,59 63.5,63 C63.5,67 60.5,70 56.5,70 H44.5 M48.5,37.5 V42 M53.5,37.5 V42 M48.5,70 V74.5 M53.5,70 V74.5" />
+</vector>

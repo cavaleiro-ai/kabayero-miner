@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kabayero Miner</string>
+    <string name="notification_channel_mining">Mineração</string>
+    <string name="notification_channel_mining_desc">Status da mineração em execução</string>
+    <string name="notification_mining_title">Kabayero Miner</string>
+    <string name="notification_stop">Parar</string>
+</resources>
