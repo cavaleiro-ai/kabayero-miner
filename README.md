@@ -106,9 +106,10 @@ tools/rag/    RAG local para perguntar à documentação offline
 | Moto G 2014 (LineageOS 17.1 / Android 10, ARM 32 bits, 4 núcleos) | 100% = 4 threads, ~357 kH/s; 50% = ~192 kH/s; 25% = ~96 kH/s; 0% = conectado sem hashes; mudanças aplicadas sem reconectar |
 | Proteção térmica no Moto G (bateria a 38 °C) | limite baixado para 35 °C: pausou com "temperatura 38 °C (limite 35 °C; retoma a 25 °C)", também na notificação; limites subidos para 60/55 °C: retomou sozinha |
 | Telas Receber/Enviar no Moto G | QR e endereço corretos; Enviar bloqueia captura, consulta saldo e taxas, valida o destino e recusa revisar sem saldo. Transmissão real ainda não exercitada (carteiras de teste sem saldo); a assinatura é garantida pelo vetor oficial do BIP143 |
+| Teclado x campos de texto (tablet, teclado Samsung) | com o teclado aberto, os 4 campos da confirmação, o campo das 24 palavras (antes e depois de digitar) e o destino do envio ficaram acima do topo do teclado (medido por `dumpsys window`) |
 | Fluxo completo da carteira no tablet e no Moto G (automatizado) | criar -> 24 palavras -> confirmar -> salvar -> painel -> Carteira mostra endereço e zpub -> "Verificar frase" responde CONFERE; telas sensíveis com captura bloqueada |
 
-Bugs encontrados e corrigidos nos testes em aparelho: fallback IPv4 quando o IPv6 da operadora recusa o pool; FLAG_SECURE perdido na transição entre telas; descarte indevido da carteira ao avançar de tela; aborto após salvar a carteira; títulos cortados em telas de 720 px; barras do sistema claras em aparelhos com tema claro.
+Bugs encontrados e corrigidos nos testes em aparelho: campos de texto escondidos atrás do teclado (a UI edge-to-edge precisa de `imePadding()`, aplicado na raiz); fallback IPv4 quando o IPv6 da operadora recusa o pool; FLAG_SECURE perdido na transição entre telas; descarte indevido da carteira ao avançar de tela; aborto após salvar a carteira; títulos cortados em telas de 720 px; barras do sistema claras em aparelhos com tema claro.
 
 ## Limitações conhecidas
 

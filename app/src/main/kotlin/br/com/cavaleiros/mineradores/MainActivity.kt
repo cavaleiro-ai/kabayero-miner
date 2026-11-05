@@ -11,6 +11,10 @@ import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.ui.Modifier
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.biometric.BiometricManager
@@ -64,7 +68,11 @@ class MainActivity : FragmentActivity() {
 
         setContent {
             CavaleirosTheme {
-                AppNavigation(vm = vm, actions = actions)
+                // Com edge-to-edge o sistema nao redimensiona a janela para o teclado;
+                // imePadding() encolhe o conteudo e o campo em foco rola para a area visivel.
+                Box(Modifier.fillMaxSize().imePadding()) {
+                    AppNavigation(vm = vm, actions = actions)
+                }
             }
         }
     }

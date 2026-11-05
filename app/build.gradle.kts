@@ -15,8 +15,8 @@ android {
         applicationId = "br.com.cavaleiros.mineradores"
         minSdk = 23          // Android 6.0+ (Keystore AES/GCM, biometria, permissoes em runtime)
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
         vectorDrawables { useSupportLibrary = true }
     }
 

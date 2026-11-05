@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2026-11-05)
+
+- Correção: os campos de texto (palavras da carteira, verificação, envio, config) ficavam escondidos atrás do teclado; agora o conteúdo sobe com o teclado e o campo em foco permanece visível.
+- CI: workflow usa o Android SDK pré-instalado do runner e cache do Gradle.
+
 ## 1.0.0 (2026-11-04)
 
 Primeira versão pública.
