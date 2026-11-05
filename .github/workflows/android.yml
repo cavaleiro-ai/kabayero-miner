@@ -18,8 +18,16 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # O runner ubuntu-latest ja traz o Android SDK em $ANDROID_HOME; so garantimos
+      # licencas aceitas e os pacotes que o projeto usa (platform 35, build-tools 35).
       - name: Android SDK
-        uses: android-actions/setup-android@v3
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0" "platform-tools" > /dev/null
+
+      - name: Cache do Gradle
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Permissao do gradlew
         run: chmod +x gradlew
